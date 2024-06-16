@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid row p-0 m-0">
+            <aside class="side-menu col-2 pt-4 position-fixed">
+                <div class="col-header d-flex justify-content-between align-items-center px-2 mb-5">
+                    <a href="index.html" class="w-100"><img src="./assets/logo.png" class="w-75"></a>
+                    <button><i class="fa-solid fa-compress"></i></button>
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <a class="accordion-button collapsed first text-decoration-none text-white"
+                                href="index.html" type="button" style="background-color: transparent; font-size: 15px;">
+                                <i class="fa-solid fa-house me-2"></i>
+                                Dashboard
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <i class="fa-solid fa-box me-2"></i>
+                                Product
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body row">
+                                <a href="products.html" class="text-white text-decoration-none mb-2"> - Products</a>
+                                <a href="addproduct.html" class="text-white text-decoration-none"> - New Products</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <i class="fa-solid fa-layer-group me-2"></i>
+                                Category
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body row">
+                                <a href="category.html" class="text-white text-decoration-none mb-2"> - Category
+                                    Lists</a>
+                                <a href="newcategory.html" class="text-white text-decoration-none"> - Add New
+                                    Category</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <i class="fa-solid fa-gear me-2"></i>
+                                Attributes
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body row">
+                                <a href="attributes.html" class="text-white text-decoration-none mb-2"> - Attributes</a>
+                                <a href="addatributes.html" class="text-white text-decoration-none"> - Add
+                                    Attributes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                <i class="fa-solid fa-user me-2"></i>
+                                Users
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body row">
+                                <a href="users.html" class="text-white text-decoration-none mb-2"> - All users</a>
+                                <a href="adduser.html" class="text-white text-decoration-none"> - Add new user</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-10 ms-auto p-0" style="background-color: #f9f9f6;">
+
+                <header class="bg-white w-100 py-4 px-4  m-0 row d-flex justify-content-between sticky-top">
+                    <div class="search col-4">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control border-0 search-field"
+                                placeholder="Search Fastkart.." aria-label="Search" aria-describedby="button-addon2">
+                            <button class="btn border-0 search-btn" type="button" id="button-addon2"><i
+                                    class="fa-solid fa-magnifying-glass text-white"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex gap-3 justify-content-end">
+                        <button class="border-0 bg-body fs-5"><i class="fa-regular fa-bell"></i></button>
+                        <button class="border-0 bg-body fs-5"><i class="fa-regular fa-moon"></i></button>
+                        <div class="account d-flex align-items-center">
+                            <img src="./assets/account-img.jpeg" style="width: 48px; height: 48px; border-radius: 50%;"
+                                class="object-fit-cover me-2">
+                            <div class="account-info d-flex flex-column">
+                                <span class=" fw-bold">Emay Walter</span>
+                                <small class="fw-light">Admin</small>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="px-4">
+                    <div class="container mt-5 px-5 py-5  bg-white rounded">
+                        <div class="header d-flex justify-content-between mb-5">
+                            <h3>Products</h3>
+                            <div class="links d-flex gap-3 align-items-baseline pe-3">
+                                <a href="#" class="btn btn-success">+ Add new</a>
+                            </div>
+                        </div>
+                        <div class="form-group row w-100 d-flex justify-content-end mb-3">
+                            <label for="colFormLabelSm" class="col-1 col-form-label col-form-label">Search:</label>
+                            <div class="col-3 p-0">
+                                <input type="email" class="form-control form-control" id="colFormLabelSm">
+                            </div>
+                        </div>
+                        <div class="table-view pe-3">
+                            <table class="table table-borderless text-center table-striped">
+                                <thead>
+                                    <tr class="table-secondary" style="line-height: 40px; border-radius: 10px;">
+                                        <th scope="col">User</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Option</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><img src="./assets/user-img.jpeg" class="rounded"
+                                                style="width: 40px;"></td>
+                                        <td>
+                                            <span class="fw-bold">Everett C. Green</span>
+                                            <br>
+                                            <small class="text-secondary">Essex Court</small>
+                                        </td>
+                                        <td>+802-77-86-65</td>
+                                        <td><small>EverettCGreen@rhyta.com</small></td>
+                                        <td>
+                                            <small><i class="fa-regular fa-eye me-2" style="color: purple;"></i></small>
+                                            <small><i class="fa-solid fa-pen me-2" style="color: blue;"></i></small>
+                                            <small><i class="fa-solid fa-trash" style="color: red;"></i></small>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><img src="./assets/user-img.jpeg" class="rounded"
+                                                style="width: 40px;"></td>
+                                        <td>
+                                            <span class="fw-bold">Everett C. Green</span>
+                                            <br>
+                                            <small class="text-secondary">Essex Court</small>
+                                        </td>
+                                        <td>+802-77-86-65</td>
+                                        <td><small>EverettCGreen@rhyta.com</small></td>
+                                        <td>
+                                            <small><i class="fa-regular fa-eye me-2" style="color: purple;"></i></small>
+                                            <small><i class="fa-solid fa-pen me-2" style="color: blue;"></i></small>
+                                            <small><i class="fa-solid fa-trash" style="color: red;"></i></small>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><img src="./assets/user-img.jpeg" class="rounded"
+                                                style="width: 40px;"></td>
+                                        <td>
+                                            <span class="fw-bold">Everett C. Green</span>
+                                            <br>
+                                            <small class="text-secondary">Essex Court</small>
+                                        </td>
+                                        <td>+802-77-86-65</td>
+                                        <td><small>EverettCGreen@rhyta.com</small></td>
+                                        <td>
+                                            <small><i class="fa-regular fa-eye me-2" style="color: purple;"></i></small>
+                                            <small><i class="fa-solid fa-pen me-2" style="color: blue;"></i></small>
+                                            <small><i class="fa-solid fa-trash" style="color: red;"></i></small>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><img src="./assets/user-img.jpeg" class="rounded"
+                                                style="width: 40px;"></td>
+                                        <td>
+                                            <span class="fw-bold">Everett C. Green</span>
+                                            <br>
+                                            <small class="text-secondary">Essex Court</small>
+                                        </td>
+                                        <td>+802-77-86-65</td>
+                                        <td><small>EverettCGreen@rhyta.com</small></td>
+                                        <td>
+                                            <small><i class="fa-regular fa-eye me-2" style="color: purple;"></i></small>
+                                            <small><i class="fa-solid fa-pen me-2" style="color: blue;"></i></small>
+                                            <small><i class="fa-solid fa-trash" style="color: red;"></i></small>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><img src="./assets/user-img.jpeg" class="rounded"
+                                                style="width: 40px;"></td>
+                                        <td>
+                                            <span class="fw-bold">Everett C. Green</span>
+                                            <br>
+                                            <small class="text-secondary">Essex Court</small>
+                                        </td>
+                                        <td>+802-77-86-65</td>
+                                        <td><small>EverettCGreen@rhyta.com</small></td>
+                                        <td>
+                                            <small><i class="fa-regular fa-eye me-2" style="color: purple;"></i></small>
+                                            <small><i class="fa-solid fa-pen me-2" style="color: blue;"></i></small>
+                                            <small><i class="fa-solid fa-trash" style="color: red;"></i></small>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="py-2 mt-5 sticky-bottom" style="background-color: white;">
+                    <p class="text-center" style="font-size: 13px; color: #4a5568;">Copyright 2022 © Fastkart theme by
+                        pixelstrap</p>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

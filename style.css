@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+.side-menu {
+  background-color: #009288;
+  position: fixed;
+  height: 100dvh;
+  z-index: 1;
+  box-shadow: 1px 1px 5px lightgray;
+}
+.side-menu .col-header button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.side-menu .accordion {
+  background-color: transparent;
+  border: none;
+}
+.side-menu .accordion .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+.side-menu .accordion .accordion-item .accordion-header {
+  background-color: transparent;
+}
+.side-menu .accordion .accordion-item .accordion-header button {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  color: white;
+}
+.side-menu .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed), .side-menu .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed):focus {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+}
+.side-menu .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-image: initial;
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+}
+.side-menu .accordion .accordion-item .accordion-header .accordion-button.first::after {
+  background-image: initial;
+  content: "";
+}
+.side-menu .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  content: "\f077";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+}
+.side-menu .accordion .accordion-item .accordion-header:hover {
+  background-color: rgba(255, 255, 255, 0.055);
+  border-radius: 10px;
+}
+.side-menu .accordion .accordion-item .accordion-body a {
+  font-size: 14px;
+}
+
+header {
+  box-shadow: 2px 0 5px lightgray;
+}
+
+.search-btn {
+  background-color: orange;
+}
+
+.search-btn:hover {
+  background-color: orange;
+}
+
+.search-field {
+  background-color: rgba(211, 211, 211, 0.251);
+  box-shadow: none;
+}
+
+.search-field::-moz-placeholder {
+  color: gray;
+  font-size: 15px;
+}
+
+.search-field::placeholder {
+  color: gray;
+  font-size: 15px;
+}
+
+.information .card {
+  border: none;
+  transition: 0.25s;
+  border-radius: 15px;
+}
+.information .card .card-info span {
+  font-size: 15px;
+  color: #9a9a9a;
+}
+.information .card .card-body i {
+  color: green;
+  font-size: 23px;
+  background-color: rgba(0, 128, 0, 0.076);
+  padding: 10px;
+  border-radius: 10px;
+}
+.information .card:hover {
+  box-shadow: 0 0 10px lightgray;
+  transform: translateY(-6px);
+}
+
+.category .container {
+  border-radius: 15px;
+}
+.category p {
+  font-size: 18px;
+  color: #4a5568;
+  font-weight: bold;
+}
+.category .col a i {
+  padding: 40px 35px;
+  font-size: 30px;
+  color: gray;
+  background-color: #f9f9f6;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.category .col a i:hover {
+  background-color: #009288;
+  color: white;
+}
+.category .col a span {
+  text-overflow: ellipsis;
+  font-size: 13px;
+  color: #333;
+}
+
+.charts img {
+  border-radius: 15px;
+  transition: 0.25s;
+}
+.charts img:hover {
+  box-shadow: 0 0 10px lightgray;
+  transform: translateY(-6px);
+}
+
+footer {
+  box-shadow: 1px 1px 5px lightgray;
+}
+
+.file-choose {
+  border: 1px dashed lightgray;
+  cursor: pointer;
+}
+
+.file-choose:hover {
+  background-color: rgba(211, 211, 211, 0.268);
+}
+
+.nav-pills .nav-item .nav-link {
+  border: none;
+  padding: 10px 25px;
+  background-color: transparent;
+  position: relative;
+  color: #212529;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-pills .nav-item .nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+  opacity: 0;
+}
+
+.nav-pills .nav-item .nav-link.active::after {
+  opacity: 1;
+}
+
+.radio-section i::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid green;
+}
+.radio-section input:checked + i::after {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */
